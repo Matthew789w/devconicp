@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Website</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to My Website</h2>
+        <p>Explore the world of creativity and design.</p>
+        <button id="exploreBtn">Explore More</button>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item" style="background-color: #3498db;"><img src="gallery/picture1.jpg"></div>
+            <div class="gallery-item" style="background-color: #e74c3c;"><img src="gallery/picture2.jpg"></div>
+            <div class="gallery-item" style="background-color: #f1c40f;"><img src="gallery/picture3.jpg"></div>
+            <div class="gallery-item" style="background-color: #2ecc71;"><img src="gallery/picture4.jpg"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="formFeedback" style="margin-top: 10px; color: green;"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+    <!-- Modal for "Explore More" -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Explore More</h2>
+            <p>Here you can find more information about our projects and designs.</p>
+            <div class="modal-gallery">
+                <img src="https://via.placeholder.com/300" alt="Sample Image 1">
+                <img src="https://via.placeholder.com/300" alt="Sample Image 2">
+                <img src="https://via.placeholder.com/300" alt="Sample Image 3">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
